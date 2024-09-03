@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS和JavaScript引入方式示例</title>
+
+    <!-- 内部样式表（Internal Style Sheet） -->
+    <style>
+        /* 这个样式会将所有h1元素的颜色设置为蓝色 */
+        h1 {
+            color: blue;
+        }
+    </style>
+
+    <!-- 外部样式表（External Style Sheet） -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- 内部脚本（Internal Script） -->
+    <script>
+        // 这个函数会在点击按钮时弹出提示框
+        function greet() {
+            alert('Hello, World!');
+        }
+    </script>
+    
+    <!-- 外部脚本（External Script） -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- 内联样式（Inline Style） -->
+    <h1 style="color: red;">Hello, World!</h1> <!-- 这个标题将会显示为红色 -->
+
+    <button onclick="greet()">点击我</button> <!-- 点击按钮时会弹出提示框 -->
+</body>
+</html>
+
